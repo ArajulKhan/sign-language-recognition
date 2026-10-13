@@ -1,0 +1,7 @@
+# Use Python 3.10 or 3.13
+opencv-python
+mediapipe == 0.10.14
+numpy
+tensorflow
+scikit-learn
+pyttsx3  # optional: text-to-speech

@@ -1,0 +1,54 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+
+# ---- Project data and models (large / generated / personal) ----
+# Recorded landmark sequences (these describe your own hands, keep them private)
+data/raw/
+data/processed/
+# Trained models and the downloaded MediaPipe model
+models/*.keras
+models/*.h5
+models/*.tflite
+models/*.onnx
+models/*.task
+models/labels.json
+# keep the folders themselves in git
+!data/.gitkeep
+!models/.gitkeep
+
+# ---- Experiment tracking / logs ----
+logs/
+runs/
+mlruns/
+wandb/
+*.log
+
+# ---- Notebooks ----
+.ipynb_checkpoints/
+
+# ---- Secrets ----
+.env
+.env.*
+
+# ---- IDEs ----
+.vscode/
+.idea/
+*.swp
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
